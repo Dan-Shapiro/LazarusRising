@@ -18,8 +18,12 @@
 @import "font-awesome";
 @import "variables";
 
+* {
+
+}
+
 body {
-	font-family: 'Open Sans', sans-serif;
+	position: relative;
 }
 
 a {
@@ -37,13 +41,16 @@ a {
 }
 
 #main_navigation {
+	font-family: 'Open Sans';
 	border-bottom: 1px solid $dark;
 	text-align: center;
+	padding: 0 5%;
 	nav {
 		display: inline-block;
 		margin: 24px auto;
+		width: 90%;
 		a {
-			margin: 0 45px;
+			margin: 0 2.5%;
 			font-size: 10px;
 			letter-spacing: 0.5px;
 			color: $dark;
@@ -55,12 +62,14 @@ a {
 		.donate {
 			color: $brand-red;
 			font-weight: 600;
+			&:hover {
+				border-bottom: 1px solid $brand-red;
+			}
 		}
 	}
-
 	.user-icon {
 		float: right;
-		margin: 24px 45px;
+		margin: 24px 0;
 		color: $dark
 	}
 }
