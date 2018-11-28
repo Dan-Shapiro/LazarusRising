@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "normalize-rails";
+@import "font-awesome";
+@import "variables";
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+#main_navigation {
+	border-bottom: 1px solid $dark;
+	text-align: center;
+	nav {
+		display: inline-block;
+		margin: 24px auto;
+		a {
+			margin: 0 45px;
+			font-size: 10px;
+			letter-spacing: 0.5px;
+			color: $dark;
+			padding-bottom: 5px;
+			&:hover {
+				border-bottom: 1px solid $dark;
+			}
+		}
+		.donate {
+			color: $brand-red;
+			font-weight: 600;
+		}
+	}
+
+	.user-icon {
+		float: right;
+		margin: 24px 45px;
+		color: $dark
+	}
+}
