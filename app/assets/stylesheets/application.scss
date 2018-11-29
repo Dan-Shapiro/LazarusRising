@@ -100,10 +100,12 @@ a {
 			}
 		}
 		.footer-right {
-			width: 33.33%;
+			width: 27.33%;
 			float: right;
 			font-family: 'Open Sans';
 			color: $dark;
+			padding: 0 2% 0 4%;
+			margin: 0 auto;
 			.footer-right-header {
 				font-size: 9px;
 				font-weight: bold;
@@ -111,18 +113,23 @@ a {
 			}
 			.footer-email {
 				position: relative;
+				width: 100%;
+				border: 1px solid $dark;
 				.footer-email-input {
 					display: inline;
 					color: $input-placeholder;
 					letter-spacing: 0.4px;
 					font-size: 8px;
-					width: 100%;
-					position: absolute;
+					height: 24px;
+					display: inline;
+					padding-left: 5px;
+					border-color: transparent;
 				}
 				.footer-email-submit {
 					color: $dark;
-					position: absolute;
-					right: 5px;
+					display: inline;
+					padding: 6px;
+					float: right;
 				}
 			}
 			.footer-copyright {
