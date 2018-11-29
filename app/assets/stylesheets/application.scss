@@ -73,3 +73,75 @@ a {
 		color: $dark
 	}
 }
+
+#main_footer {
+	border-top: 1px solid $dark;
+	padding: 0 4%;
+	margin: 0 auto;
+	width: 92%;
+	.footer-split {
+		margin-top: 40px;
+		.footer-left {
+			width: 66.66%;
+			float: left;
+			.footer-left-col {
+				width: 17%;
+				float: left;
+				padding: 0 4%;
+				a {
+					font-family: 'Open Sans';
+					font-size: 9px;
+					letter-spacing: 0.5px;
+					color: $dark;
+				}
+				.footer-col-header {
+					font-weight: bold;
+				}
+			}
+		}
+		.footer-right {
+			width: 33.33%;
+			float: right;
+			font-family: 'Open Sans';
+			color: $dark;
+			.footer-right-header {
+				font-size: 9px;
+				font-weight: bold;
+				letter-spacing: 0.5px;
+			}
+			.footer-email {
+				position: relative;
+				.footer-email-input {
+					display: inline;
+					color: $input-placeholder;
+					letter-spacing: 0.4px;
+					font-size: 8px;
+					width: 100%;
+					position: absolute;
+				}
+				.footer-email-submit {
+					color: $dark;
+					position: absolute;
+					right: 5px;
+				}
+			}
+			.footer-copyright {
+				font-size: 9px;
+				font-weight: 600;
+				letter-spacing: 0.5px;
+				text-align: center;
+				a {
+					color: $dark;
+				}
+			}
+		}
+	}
+	.footer-bottom {
+		text-align: center;
+		font-family: 'Open Sans';
+		font-size: 9px;
+		letter-spacing: 0.5px;
+		color: $muted;
+		margin: 50px 0 40px 0;
+	}
+}
