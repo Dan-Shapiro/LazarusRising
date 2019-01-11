@@ -104,19 +104,11 @@
 			float: left;
 			width: 20%;
 			.supporter-logo {
-				background-color: $placeholder-bg;
 				margin: 30px auto 50px auto;
-				height: 50px;
 				width: 80%;
-				display: table; /* for placeholder */
-				.placeholder {
-				  font-family: 'Work Sans';
-				  font-size: 24px;
-				  letter-spacing: 0.8px;
-				  color: $dark;
-				  display: table-cell;
-				  vertical-align: middle;
-			  }
+				img {
+					height: 50px;
+				}
 			}
 		}
 	}
