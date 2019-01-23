@@ -1,0 +1,2 @@
+class PressRoomController < ApplicationController
+end
