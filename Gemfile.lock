@@ -88,6 +88,7 @@ GEM
     jbuilder (2.8.0)
       activesupport (>= 4.2.0)
       multi_json (>= 1.2)
+    json (2.1.0)
     loofah (2.2.3)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -130,6 +131,10 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.0.4)
       loofah (~> 2.2, >= 2.2.2)
+    rails_real_favicon (0.0.12)
+      json (>= 1.7, < 3)
+      rails (>= 3.1)
+      rubyzip (~> 1)
     railties (5.2.1.1)
       actionpack (= 5.2.1.1)
       activesupport (= 5.2.1.1)
@@ -202,6 +207,7 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rails (~> 5.2.1)
+  rails_real_favicon
   sass-rails (~> 5.0)
   selenium-webdriver
   turbolinks (~> 5)

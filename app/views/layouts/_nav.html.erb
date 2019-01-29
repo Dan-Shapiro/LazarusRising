@@ -1,4 +1,7 @@
 <header id="main_navigation" class="clearfix">
+	<%= link_to '#', :class => 'lazarus-logo' do %>
+		<%= image_tag 'lazarusrising.PNG', :class => 'lazarus-image' %>
+	<% end %>
 	<nav>
 		<%= link_to "Who We Are", '#', :id => "nav-item-1", :onmouseover => "showDropdown(1)" %>
 		<%= link_to "Ways We Help", '#', :id => "nav-item-2", :onmouseover => "showDropdown(2)" %>

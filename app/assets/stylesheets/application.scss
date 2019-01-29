@@ -44,12 +44,21 @@ a {
 	font-family: 'Open Sans';
 	border-bottom: 1px solid $dark;
 	text-align: center;
-	padding: 0 5%;
+	width: 100%;
+
+	.lazarus-logo {
+		margin: 12px auto;
+		float: left;
+		.lazarus-image {
+			width: 110px;
+			height: 50px;
+		}
+	}
 
 	nav {
 		display: inline-block;
 		margin: 24px auto;
-		width: 90%;
+		width: calc(100% - 220px);
 		a {
 			margin: 0 2.5%;
 			font-size: 10px;
@@ -68,8 +77,10 @@ a {
 			}
 		}
 	}
+
 	.user-icon {
 		float: right;
+		width: 110px;
 		margin: 24px 0;
 		color: $dark
 	}
