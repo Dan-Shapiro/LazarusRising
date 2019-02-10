@@ -1,0 +1,92 @@
+<div class="gi-banner">
+	<div class="gi-banner-text">
+		<p class="gi-banner-title">Get Involved</p>
+		<p class="gi-banner-desc">No matter who you are, Lazarus Rising has a place for you in our organization. Please fill out the form below and one of our team memebers will reach out to discusss!</p>
+	</div>
+</div>
+
+<div class="gi-options-section">
+	<div class="gi-options">
+		<div class="gi-option">
+			<p class="option-num">1</p>
+			<p class="option-title">Volunteering</p>
+			<p class="option-desc">Either starting a region or joining a region (potential ideas are to show our existing regions?)</p>
+		</div>
+		<div class="gi-option">
+			<p class="option-num">2</p>
+			<p class="option-title">Partnering</p>
+			<p class="option-desc">Are you a homeless shelter? We can support your mission to help your participants be employed</p>
+		</div>
+		<div class="gi-option">
+			<p class="option-num">3</p>
+			<p class="option-title">Donating</p>
+			<p class="option-desc">2 ways: Click on the donate link or fill out the form for someone to reach out.</p>
+		</div>
+	</div>
+	<div class="gi-option-buttons">
+		<%= link_to 'Donate', '#', :class => 'gi-button' %>
+		<%= link_to 'Reach Out', '#', :class => 'gi-button' %>
+	</div>
+</div>
+
+
+
+
+<div class="gi-form">
+	<p class="form-title">Ready to get involved?</p>
+	<p class="form-desc">Fill out the below to get started. Lorem ipsum dolor sit amet</p>
+	<div class="web-to-lead">
+		
+		
+		<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+		<script src="https://www.google.com/recaptcha/api.js"></script>
+		<script>
+		 function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+		</script>
+		
+		<!--  ----------------------------------------------------------------------  -->
+		<!--  NOTE: Please add the following <FORM> element to your page.             -->
+		<!--  ----------------------------------------------------------------------  -->
+		<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+		<input type=hidden name='captcha_settings' value='{"keyname":"LR_Key_Pair","fallback":"true","orgId":"00D1I000003GP3R","ts":""}'>
+		<input type=hidden name="oid" value="00D1I000003GP3R">
+		<input type=hidden name="retURL" value="http://lazarusrising.org/formsubmitted/">
+		<!--  ----------------------------------------------------------------------  -->
+		<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+		<!--  these lines if you wish to test in debug mode.                          -->
+		<!--  <input type="hidden" name="debug" value=1>                              -->
+		<!--  <input type="hidden" name="debugEmail"                                  -->
+		<!--  value="william.cobb@lazarusrising.org">                                 -->
+		<!--  ----------------------------------------------------------------------  -->
+		<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+		<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+		<label for="company">Affiliation</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+		<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+		<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+		Involvement Type:<select  id="00N1I00000N2mrf" name="00N1I00000N2mrf" title="Involvement Type"><option value="">--None--</option><option value="Volunteer - NYC">Volunteer - NYC</option>
+		<option value="Volunteer - DC">Volunteer - DC</option>
+		<option value="Volunteer - Delaware">Volunteer - Delaware</option>
+		<option value="Volunteer - Philadelphia / Camden">Volunteer - Philadelphia / Camden</option>
+		<option value="Volunteer - Binghamton">Volunteer - Binghamton</option>
+		<option value="Volunteer - Pittsburgh">Volunteer - Pittsburgh</option>
+		<option value="Volunteer - Los Angeles">Volunteer - Los Angeles</option>
+		<option value="Volunteer - Williamsburg">Volunteer - Williamsburg</option>
+		<option value="Volunteer - Other">Volunteer - Other</option>
+		<option value="Partner - Shelter">Partner - Shelter</option>
+		<option value="Partner - Corporation / University">Partner - Corporation / University</option>
+		<option value="Partner - Other">Partner - Other</option>
+		<option value="Donate">Donate</option>
+		<option value="Media">Media</option>
+		<option value="Homeless">Homeless</option>
+		</select><br>
+		Comments:<textarea  id="00N1I00000N2nHT" name="00N1I00000N2nHT" rows="3" type="text" wrap="soft"></textarea><br>
+		<div class="g-recaptcha" data-sitekey="6LeT1kwUAAAAANccNjNO8k4jt90BQF_8p0hjP10e"></div><br>
+		<input type="submit" name="submit">
+		</form>
+
+	</div>
+</div>
+
+
+
+

@@ -1,0 +1,175 @@
+// Place all the styles related to the get_involved controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables";
+
+.gi-banner {
+	width: 100%;
+	display: inline-block;
+	background-color: $placeholder-bg;
+	margin: 0;
+	border-bottom: 1px solid $dark;
+	.gi-banner-text {
+		margin: 100px auto;
+		.gi-banner-title {
+			font-family: 'Work Sans';
+			font-size: 24px;
+			letter-spacing: 0.8px;
+			text-align: center;
+			color: $dark;
+		}
+		.gi-banner-desc {
+			width: 60%;
+			min-width: 550px;
+			margin: 0 auto;
+			font-family: 'Crimson Text';
+			letter-spacing: 1px;
+			text-align: center;
+			color: $dark;
+		}
+	}
+}
+
+.gi-options-section {
+	width: 100%;
+	display: inline-block;
+	background-color: $light;
+	margin: 0 auto;
+	border-bottom: 1px solid $dark;
+	padding: 50px 0;
+	.gi-options {
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 30px;
+		.gi-option {
+			width: 33.33%;
+			float: left;
+			margin: 0 auto;
+			.option-num {
+				border-radius: 50%;
+				width: 18px;
+				height: 18px;
+				padding: 4px;
+				border: 2px solid $brand-red;
+				color: $brand-red;
+				text-align: center;
+				font-family: 'Open Sans';
+				font-size: 16px;
+				font-style: bold;
+				line-height: 18px;
+				margin: 0 auto;
+			}
+			.option-title {
+				font-family: 'Work Sans';
+				font-size: 16px;
+				letter-spacing: 0.5px;
+				text-align: center;
+				color: $dark;
+			}
+			.option-desc {
+				width: 70%;
+				margin: 0 auto;
+				font-family: 'Crimson Text';
+				font-size: 16px;
+				letter-spacing: 1.1px;
+				text-align: center;
+				color: $dark;
+			}
+		}
+	}
+	.gi-option-buttons {
+		margin: 0 auto;
+		//width: 33%;
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+		.gi-button {
+			margin: 0 25px;
+			padding: 10px 30px;
+			background: $brand-red;
+			font-family: 'Open Sans';
+			font-weight: bold;
+			letter-spacing: 2.2px;
+			text-align: center;
+			color: $light;
+			text-transform: uppercase;
+			font-size: 11px;
+		}
+	}
+}
+
+.gi-form {
+	display: inline-block;
+	width: 100%;
+	margin: 50px auto;
+	.form-title {
+		font-family: 'Work Sans';
+		font-size: 16px;
+		letter-spacing: 0.5px;
+		text-align: center;
+		color: $dark;
+	}
+	.form-desc {
+		font-family: CrimsonText;
+  	font-size: 16px;
+  	letter-spacing: 1.1px;
+  	text-align: center;
+  	color: $dark;
+  	width: 50%;
+  	margin: 0 auto;
+	}
+	.web-to-lead {
+		width: 100%;
+		text-align: center;
+		margin: 35px auto;
+
+		label {
+			font-family: 'Open Sans';
+			font-size: 16px;
+			letter-spacing: 0.5px;
+			color: $dark;
+			/*
+			&:after {
+				content: '\A';
+    		white-space: pre;
+			}
+			*/
+		}
+
+		input[type="text"],
+		textarea,
+		select
+		 {
+			width: 325px;
+			height: 35px;
+			background-color: $input-bg;
+			border: none;
+			margin: 15px auto;
+			color: $input-placeholder;
+		}
+
+		textarea {
+			height: 100px;
+			max-height: 200px;
+			max-width: 50%;
+		}
+
+		div {
+			margin: 15px auto;
+		}
+
+		input[type="submit"] {
+			padding: 10px 30px;
+			background: $brand-red;
+			font-family: 'Open Sans';
+			font-weight: bold;
+			letter-spacing: 2.2px;
+			text-align: center;
+			color: $light;
+			text-transform: uppercase;
+			font-size: 11px;
+			border: none;
+		}
+	}
+}
