@@ -1,5 +1,5 @@
 <header>
-	<%= link_to '#', :class => 'lazarus-logo' do %>
+	<%= link_to root_path, :class => 'lazarus-logo' do %>
 		<%= image_tag 'lazarusrising.PNG', :class => 'lazarus-image' %>
 	<% end %>
 	<ul class="main-nav">
@@ -9,7 +9,7 @@
 			<% end %>
 			<ul class="nav-dropdown">
 				<li class="nav-dropdown-link"><%= link_to 'Mission/History', '#' %></li>
-				<li class="nav-dropdown-link"><%= link_to 'Our Team', '#' %></li>
+				<li class="nav-dropdown-link"><%= link_to 'Our Team', our_team_path %></li>
 			</ul>
 		</li>
 		<li class="nav-link">
@@ -21,8 +21,8 @@
 				<li class="nav-dropdown-link"><%= link_to 'Financials', '#' %></li>
 			</ul>
 		</li>
-		<li class="nav-link"><%= link_to 'Get Involved', '#' %></li>
-		<li class="nav-link"><%= link_to 'Press Room', '#' %></li>
+		<li class="nav-link"><%= link_to 'Get Involved', get_involved_path %></li>
+		<li class="nav-link"><%= link_to 'Press Room', press_room_path %></li>
 	</ul>
 	<%= link_to 'Login', '#', :class => 'nav-login' %>
 	<%= link_to 'Donate', '#', :class => 'nav-donate' %>
