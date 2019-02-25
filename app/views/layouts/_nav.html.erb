@@ -1,73 +1,29 @@
-<header id="main_navigation" class="clearfix">
+<header>
 	<%= link_to '#', :class => 'lazarus-logo' do %>
 		<%= image_tag 'lazarusrising.PNG', :class => 'lazarus-image' %>
 	<% end %>
-	<nav>
-		<%= link_to "Who We Are", '#', :id => "nav-item-1", :onmouseover => "showDropdown(1)" %>
-		<%= link_to "Ways We Help", '#', :id => "nav-item-2", :onmouseover => "showDropdown(2)" %>
-		<%= link_to "Get Involved", '#', :id => "nav-item-3",:onmouseover => "showDropdown(3)" %>
-		<%= link_to "Press Room", '#', :onmouseover => "hideAllDropdowns()" %>
-		<%= link_to "Donate", '#', :class => 'donate', :onmouseover => "hideAllDropdowns()" %>
-	</nav>
-	<%= link_to '#', :class => 'user-icon' do %>
-		<%= fa_icon "user" %>
-	<% end %>
+	<ul class="main-nav">
+		<li class="nav-link">
+			<%= link_to '#' do %>
+				Who We Are <%= fa_icon "caret-down" %>
+			<% end %>
+			<ul class="nav-dropdown">
+				<li class="nav-dropdown-link"><%= link_to 'Mission/History', '#' %></li>
+				<li class="nav-dropdown-link"><%= link_to 'Our Team', '#' %></li>
+			</ul>
+		</li>
+		<li class="nav-link">
+			<%= link_to '#' do %>
+				Ways We Help <%= fa_icon "caret-down" %>
+			<% end %>
+			<ul class="nav-dropdown">
+				<li class="nav-dropdown-link"><%= link_to 'Program Model', '#' %></li>
+				<li class="nav-dropdown-link"><%= link_to 'Financials', '#' %></li>
+			</ul>
+		</li>
+		<li class="nav-link"><%= link_to 'Get Involved', '#' %></li>
+		<li class="nav-link"><%= link_to 'Press Room', '#' %></li>
+	</ul>
+	<%= link_to 'Login', '#', :class => 'nav-login' %>
+	<%= link_to 'Donate', '#', :class => 'nav-donate' %>
 </header>
-
-<div class="dropdown-content clearfix" id="dropdown-1" onmouseleave="hideDropdown(1)">
-	<div class="dropdown-links">
-		<%= link_to "Mission/History", '#' %><br>
-		<%= link_to "Our Team", '#' %>
-	</div>
-	<div class="dropdown-image">
-		
-	</div>
-</div>
-
-<div class="dropdown-content clearfix" id="dropdown-2" onmouseleave="hideDropdown(2)">
-	<div class="dropdown-links">
-		<%= link_to "Program Model", '#' %><br>
-		<%= link_to "Financials", '#' %>
-	</div>
-	<div class="dropdown-image">
-		
-	</div>
-</div>
-
-<div class="dropdown-content clearfix" id="dropdown-3" onmouseleave="hideDropdown(3)">
-	<div class="dropdown-links">
-		<%= link_to "Volunteer", '#' %><br>
-		<%= link_to "Partner", '#' %><br>
-		<%= link_to "Get In Touch", '#' %>
-	</div>
-	<div class="dropdown-image">
-		
-	</div>
-</div>
-
-
-<script type="text/javascript">
-	showDropdown = function(itemNumber) {
-		hideAllDropdowns();
-		dropdownItem = document.getElementById("dropdown-" + itemNumber);
-		dropdownItem.style.display = "inline-block";
-		navItem = document.getElementById("nav-item-" + itemNumber);
-		navItem.style.borderBottom = "1px solid #000000";
-	};
-
-	hideDropdown = function(itemNumber) {
-		dropdownItem = document.getElementById("dropdown-" + itemNumber);
-		dropdownItem.style.display = "none";
-		navItem = document.getElementById("nav-item-" + itemNumber);
-		navItem.style.borderBottom = "0";
-	};
-
-	hideAllDropdowns = function() {
-		for (var i = 1; i < 4; i++) {
-			dropdownItem = document.getElementById("dropdown-" + i);
-			dropdownItem.style.display = "none";
-			navItem = document.getElementById("nav-item-" + i);
-			navItem.style.borderBottom = "0";
-		}
-	};
-</script>
