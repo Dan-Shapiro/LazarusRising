@@ -99,6 +99,24 @@
 	}
 }
 
+.form-full {
+	width: 100%;
+	display: inline-block;
+	.form-half {
+		width: 50%;
+		display: inline-block;
+		float: left;
+	}
+}
+
+.form-left {
+	text-align: right;
+}
+
+.form-right {
+	text-align: left;
+}
+
 .gi-form {
 	display: inline-block;
 	width: 100%;
@@ -123,18 +141,13 @@
 		width: 100%;
 		text-align: center;
 		margin: 35px auto;
+		font-size: 10px;
+		font-family: 'Open Sans';
+		letter-spacing: 0.5px;
 
-		label {
-			font-family: 'Open Sans';
-			font-size: 16px;
-			letter-spacing: 0.5px;
-			color: $dark;
-			/*
-			&:after {
-				content: '\A';
-    		white-space: pre;
-			}
-			*/
+		::placeholder {
+			color: black;
+			opacity: 1;
 		}
 
 		input[type="text"],
@@ -145,14 +158,23 @@
 			height: 35px;
 			background-color: $input-bg;
 			border: none;
-			margin: 15px auto;
-			color: $input-placeholder;
+			margin: 15px;
+			color: $dark;
+			padding: 0 10px;
+		}
+
+		select {
+			width: 345px;
 		}
 
 		textarea {
 			height: 100px;
-			max-height: 200px;
-			max-width: 50%;
+			min-height: 100px;
+			max-height: 400px;
+			width: 325px;
+			min-width: 325px;
+			max-width: 90%;
+			padding: 10px;
 		}
 
 		div {

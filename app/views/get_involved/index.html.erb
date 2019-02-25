@@ -63,30 +63,38 @@
 		<!-- First, Last, Email, Involvement Type Required -->
 
 
-		<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
-		<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
-		<label for="company">Affiliation</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
-		<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
-		<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
-		Involvement Type:<select  id="00N1I00000N2mrf" name="00N1I00000N2mrf" title="Involvement Type"><option value="">--None--</option><option value="Volunteer - NYC">Volunteer - NYC</option>
-		<option value="Volunteer - DC">Volunteer - DC</option>
-		<option value="Volunteer - Delaware">Volunteer - Delaware</option>
-		<option value="Volunteer - Philadelphia / Camden">Volunteer - Philadelphia / Camden</option>
-		<option value="Volunteer - Binghamton">Volunteer - Binghamton</option>
-		<option value="Volunteer - Pittsburgh">Volunteer - Pittsburgh</option>
-		<option value="Volunteer - Los Angeles">Volunteer - Los Angeles</option>
-		<option value="Volunteer - Williamsburg">Volunteer - Williamsburg</option>
-		<option value="Volunteer - Other">Volunteer - Other</option>
-		<option value="Partner - Shelter">Partner - Shelter</option>
-		<option value="Partner - Corporation / University">Partner - Corporation / University</option>
-		<option value="Partner - Other">Partner - Other</option>
-		<option value="Donate">Donate</option>
-		<option value="Media">Media</option>
-		<option value="Homeless">Homeless</option>
-		</select><br>
-		Comments:<textarea  id="00N1I00000N2nHT" name="00N1I00000N2nHT" rows="3" type="text" wrap="soft"></textarea><br>
-		<div class="g-recaptcha" data-sitekey="6LeT1kwUAAAAANccNjNO8k4jt90BQF_8p0hjP10e"></div><br>
-		<input type="submit" name="submit">
+			<div class="form-full">
+				<div class="form-half form-left">
+					<input id="first_name" placeholder="First Name" maxlength="40" name="first_name" size="20" type="text" required /><br>
+					<input id="email" placeholder="Email" maxlength="80" name="email" size="20" type="text" required /><br>
+					<input id="phone" placeholder="Phone" maxlength="40" name="phone" size="20" type="text" /><br>
+				</div>
+				<div class="form-half form-right">
+					<input id="last_name" placeholder="Last Name" maxlength="80" name="last_name" size="20" type="text" required /><br>
+					<input id="company" placeholder="Company" maxlength="40" name="company" size="20" type="text" /><br>
+					<select  id="00N1I00000N2mrf" name="00N1I00000N2mrf" title="Involvement Type">
+						<option value="">Involvement Type</option>
+						<option value="Volunteer - NYC">Volunteer - NYC</option>
+						<option value="Volunteer - DC">Volunteer - DC</option>
+						<option value="Volunteer - Delaware">Volunteer - Delaware</option>
+						<option value="Volunteer - Philadelphia / Camden">Volunteer - Philadelphia / Camden</option>
+						<option value="Volunteer - Binghamton">Volunteer - Binghamton</option>
+						<option value="Volunteer - Pittsburgh">Volunteer - Pittsburgh</option>
+						<option value="Volunteer - Los Angeles">Volunteer - Los Angeles</option>
+						<option value="Volunteer - Williamsburg">Volunteer - Williamsburg</option>
+						<option value="Volunteer - Other">Volunteer - Other</option>
+						<option value="Partner - Shelter">Partner - Shelter</option>
+						<option value="Partner - Corporation / University">Partner - Corporation / University</option>
+						<option value="Partner - Other">Partner - Other</option>
+						<option value="Donate">Donate</option>
+						<option value="Media">Media</option>
+						<option value="Homeless">Homeless</option>
+					</select><br>
+				</div>
+				<textarea id="00N1I00000N2nHT" placeholder="Comments" name="00N1I00000N2nHT" rows="3" type="text" wrap="soft"></textarea><br>
+				<div class="g-recaptcha" data-sitekey="6LeT1kwUAAAAANccNjNO8k4jt90BQF_8p0hjP10e"></div><br>
+				<input type="submit" name="submit">
+			</div>
 		</form>
 
 
