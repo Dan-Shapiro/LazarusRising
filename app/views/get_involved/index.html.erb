@@ -71,7 +71,7 @@
 				<div class="form-half form-right">
 					<input id="last_name" placeholder="Last Name" maxlength="80" name="last_name" size="20" type="text" required /><br>
 					<input id="company" placeholder="Company" maxlength="40" name="company" size="20" type="text" /><br>
-					<select  id="00N1I00000N2mrf" name="00N1I00000N2mrf" title="Involvement Type">
+					<select id="00N1I00000N2mrf" name="00N1I00000N2mrf" title="Involvement Type" required>
 						<option value="">Involvement Type</option>
 						<option value="Volunteer - NYC">Volunteer - NYC</option>
 						<option value="Volunteer - DC">Volunteer - DC</option>
@@ -103,7 +103,7 @@
 	</div>
 </div>
 
-<script type="text/javascript">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 	$(document).ready(function() {
 		$('#web-to-lead').submit(function(e) {
 			e.preventDefault();
