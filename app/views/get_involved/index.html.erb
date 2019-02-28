@@ -108,11 +108,11 @@
 		$('#web-to-lead').submit(function(e) {
 			e.preventDefault();
 			$.ajax({
-				url: $(this).attr('action') || window.location.pathname,
+				url: $(this).attr('action'),
 				type: "POST",
 				data: $(this).serialize(),
 				success: function(data) {
-					alert("SUCCESS")
+					alert("SUCCESS");
 				},
 				error: function (jXHR, textStatus, errorThrown) {
             alert(errorThrown);
