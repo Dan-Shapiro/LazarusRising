@@ -104,20 +104,17 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-	$(document).ready(function() {
-		$('#web-to-lead').submit(function(e) {
-			e.preventDefault();
-			$.ajax({
-				url: $(this).attr('action'),
-				type: "POST",
-				data: $(this).serialize(),
-				success: function(data) {
-					alert("SUCCESS");
-				},
-				error: function (jXHR, textStatus, errorThrown) {
-            alert(errorThrown);
-          }
-			});
+	var frm = $('#web-to-lead');
+	frm.submit(function(e) {
+		$.ajax({
+			url: frm.attr('action'),
+			type: frm.attr('method'),
+			data: frm.serialize(),
+			success: function(data) {
+				alert("SUCCESS");
+			}
 		});
+
+		e.preventDefault();
 	});
 </script>
