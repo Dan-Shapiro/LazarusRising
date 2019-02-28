@@ -92,7 +92,7 @@
 				</div>
 				<textarea id="00N1I00000N2nHT" placeholder="Comments" name="00N1I00000N2nHT" rows="3" type="text" wrap="soft"></textarea><br>
 				<div class="g-recaptcha" data-sitekey="6LeT1kwUAAAAANccNjNO8k4jt90BQF_8p0hjP10e"></div><br>
-				<input type="submit" name="submit">
+				<input type="submit" name="submit" onsubmit="do_not_redirect()">
 			</div>
 		</form>
 
@@ -104,6 +104,25 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	function do_not_redirect() {
+		var frm = $('#web-to-lead');
+		alert("IS THIS WORKING??");
+		frm.submit(function(e) {
+			$.ajax({
+				url: frm.attr('action'),
+				type: frm.attr('method'),
+				data: frm.serialize(),
+				success: function(data) {
+					alert("SUCCESS");
+				}
+			});
+
+			e.preventDefault();
+		});
+	}
+
+
+
 	$(document).ready(function() {
 		var frm = $('#web-to-lead');
 		alert("IS THIS WORKING??");
