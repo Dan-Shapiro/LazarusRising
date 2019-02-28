@@ -4,37 +4,31 @@
 			<div class="footer-left-col">
 				<%= link_to 'Who We Are', '#', :class => 'footer-col-header' %><br>
 				<%= link_to 'Mission/History', '#' %><br>
-				<%= link_to 'Our Team', '#' %><br>
+				<%= link_to 'Our Team', our_team_path %><br>
 				<br>
-				<%= link_to 'Get Involved', '#', :class => 'footer-col-header' %>
+				<%= link_to 'Get Involved', get_involved_path, :class => 'footer-col-header' %>
 			</div>
 			<div class="footer-left-col">
 				<%= link_to 'Ways We Help', '#', :class => 'footer-col-header' %><br>
 				<%= link_to 'Program Model', '#' %><br>
 				<%= link_to 'Financials', '#' %><br>
 				<br>
-				<%= link_to 'Press Room', '#', :class => 'footer-col-header' %>
+				<%= link_to 'Press Room', press_room_path, :class => 'footer-col-header' %>
 			</div>
 			<div class="footer-left-col">
 				<%= link_to 'Communities', '#', :class => 'footer-col-header' %><br>
 				<%= link_to 'Volunteer Community', '#' %><br>
 				<%= link_to 'Shelter Partner Community', '#' %><br>
 				<br>
-				<%= link_to 'Donate', '#', :class => 'footer-col-header' %>
+				<%= link_to 'Donate', 'https://www.paypal.me/lazarusrising', :class => 'footer-col-header' %>
 			</div>
 			<div class="footer-left-col">
 				<%= link_to 'Follow', '#', :class => 'footer-col-header' %><br>
-				<%= link_to '#' do %>
+				<%= link_to 'https://www.facebook.com/LazarusRisingNonprofit/' do %>
 					<%= fa_icon 'facebook-f' %> Facebook 
 				<% end %><br>
-				<%= link_to '#' do %>
+				<%= link_to 'https://www.linkedin.com/company/lazarusrising' do %>
 					<%= fa_icon 'linkedin' %> LinkedIn 
-				<% end %><br>
-				<%= link_to '#' do %>
-					<%= fa_icon 'instagram' %> Instagram 
-				<% end %><br>
-				<%= link_to '#' do %>
-					<%= fa_icon 'twitter' %> Twitter 
 				<% end %>
 			</div>
 		</div>
