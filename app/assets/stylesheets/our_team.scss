@@ -58,30 +58,49 @@
 			.pod {
 				display: inline-block;
 				vertical-align: top;
-				margin: 30px 5%;
-				width: 12.5%;
+				width: 24%;
+				margin: 30px 0;
 				.headshot {
-					height: 150px;
-					background: $placeholder-bg;
-					max-width: 150px;
-					min-width: 100px;
+					height: 136px;
+					width: 116px;
 					margin: 0 auto;
 				}
 				.info {
-					min-width: 100px;
-					h6 {
-						font-family: 'Work Sans';
-						font-size: 14px;
-						letter-spacing: 0.5px;
+					.p-name {
+						font-family: 'Open Sans';
+						font-size: 13px;
+						line-height: 16px;
+						letter-spacing: 0.55px;
 						color: $dark;
 						margin: 0;
+						text-align: center;
+						font-weight: bold;
 					}
-					p {
-						font-family: 'Crimson Text';
-						font-size: 12px;
-						letter-spacing: 0.9px;
+					.p-title {
+						font-family: 'Open Sans';
+						font-size: 10px;
+						letter-spacing: 0.55px;
 						color: $dark;
 						margin: 0;
+						line-height: 19px;
+						text-align: center;
+						font-style: italic;
+						font-weight: bold;
+					}
+					hr {
+						margin: 0 auto;
+						width: 70px;
+						height: 1px;
+						background-color: $dark;
+					}
+					.p-prof {
+						font-family: 'Open Sans';
+						font-size: 10px;
+						letter-spacing: 0.55px;
+						color: $dark;
+						margin: 0;
+						line-height: 19px;
+						text-align: center;
 					}
 				}
 			}
