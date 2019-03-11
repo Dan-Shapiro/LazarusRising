@@ -3,24 +3,29 @@
 		<%= image_tag 'lazarusrising.PNG', :class => 'lazarus-image' %>
 	<% end %>
 	<ul class="main-nav">
+		<!-- HIDE UNTIL PAGES ARE MADE
 		<li class="nav-link">
-			<%= link_to '#' do %>
-				Who We Are <%= fa_icon "caret-down" %>
-			<% end %>
+			<%#= link_to '#' do %>
+				Who We Are <%#= fa_icon "caret-down" %>
+			<%# end %>
 			<ul class="nav-dropdown">
-				<li class="nav-dropdown-link"><%= link_to 'Mission/History', '#' %></li>
-				<li class="nav-dropdown-link"><%= link_to 'Our Team', our_team_path %></li>
+				<li class="nav-dropdown-link"><%#= link_to 'Mission/History', '#' %></li>
+				<li class="nav-dropdown-link"><%#= link_to 'Our Team', our_team_path %></li>
 			</ul>
 		</li>
+		-->
+		<li class="nav-link"><%= link_to 'Our Team', our_team_path %></li>
+		<!-- HIDE UNTIL PAGES ARE MADE
 		<li class="nav-link">
-			<%= link_to '#' do %>
-				Ways We Help <%= fa_icon "caret-down" %>
-			<% end %>
+			<%#= link_to '#' do %>
+				Ways We Help <%#= fa_icon "caret-down" %>
+			<%# end %>
 			<ul class="nav-dropdown">
-				<li class="nav-dropdown-link"><%= link_to 'Program Model', '#' %></li>
-				<li class="nav-dropdown-link"><%= link_to 'Financials', '#' %></li>
+				<li class="nav-dropdown-link"><%#= link_to 'Program Model', '#' %></li>
+				<li class="nav-dropdown-link"><%#= link_to 'Financials', '#' %></li>
 			</ul>
 		</li>
+		-->
 		<li class="nav-link"><%= link_to 'Get Involved', get_involved_path %></li>
 		<li class="nav-link"><%= link_to 'Press Room', press_room_path %></li>
 	</ul>
@@ -33,7 +38,7 @@
 			<ul class="nav-dropdown">
 				<li class="nav-dropdown-link"><%= link_to 'Partner', 'https://lazarusrising.force.com/s/login/' %></li>
 				<li class="nav-dropdown-link"><%= link_to 'Volunteer', 'https://lazarusrising.force.com/s/' %></li>
-				<li class="nav-dropdown-link"><%= link_to 'Admin', '#' %></li>
+				<!--<li class="nav-dropdown-link"><%#= link_to 'Admin', '#' %></li>-->
 			</ul>
 		</li>
 		<li><%= link_to 'Donate', 'https://www.paypal.me/lazarusrising', :class => 'nav-donate', target: :_blank %></li>
