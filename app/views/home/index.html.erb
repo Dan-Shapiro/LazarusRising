@@ -1,33 +1,44 @@
-<div class="video-main">
-	<div class="placeholder">
-		Video
-	</div>
-</div>
-
-<div class="slideshow-wrapper">
-	<div class="slideshow">
-		<div class="placeholder">
-			Slideshow
-		</div>
-	</div>
-
-	<p class="slideshow-caption">Lorem ipsum dolor sit amet, consectetur adipiscine elit.</p>
-
-	<%= link_to "READ MORE", '#', :class => 'btn-read-more' %>
+<div class="banner">
+	<%= image_tag "lr-home-banner.jpg" %>
 </div>
 
 <div class="stats">
-	<div class="stat-item clearfix">
-		<h3>225+</h3>
-		<h6>Trained Volunteers</h6>
+	<h1 class="stats-title">Homelessness Statistics</h1>
+	<div class="stats-row">
+		<div class="stats-col">
+			<h2 class="stats-num">553,742</h2>
+			<p class="stats-desc">Homeslessness Persons Nationwide</p>
+		</div>
+		<div class="stats-col">
+			<h2 class="stats-num">360,867</h2>
+			<p class="stats-desc">People Living in Shelters</p>
+		</div>
+		<div class="stats-col">
+			<h2 class="stats-num">88,640</h2>
+			<p class="stats-desc">People Chronically Homeless</p>
+		</div>
 	</div>
-	<div class="stat-item">
-		<h3>6</h3>
-		<h6>Regions</h6>
-	</div>
-	<div class="stat-item">
-		<h3>400+</h3>
-		<h6>People Participate</h6>
+</div>
+
+<div class="video-wrapper">
+	<%= video_tag "lr-home-video.mp4", controls: true, poster: "video-poster.PNG" %>
+</div>
+
+<div class="stats">
+	<h1 class="stats-title">Lazarus Rising Efforts</h1>
+	<div class="stats-row">
+		<div class="stats-col">
+			<h2 class="stats-num">300+</h2>
+			<p class="stats-desc">Trained Volunteers</p>
+		</div>
+		<div class="stats-col">
+			<h2 class="stats-num">6</h2>
+			<p class="stats-desc">Regions Nationwide</p>
+		</div>
+		<div class="stats-col">
+			<h2 class="stats-num">400+</h2>
+			<p class="stats-desc">People Participated</p>
+		</div>
 	</div>
 </div>
 

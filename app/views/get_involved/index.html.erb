@@ -1,7 +1,6 @@
 <div class="gi-banner">
 	<div class="gi-banner-text">
-		<p class="gi-banner-title">Get Involved</p>
-		<p class="gi-banner-desc">No matter who you are, Lazarus Rising has a place for you in our organization. Please fill out the form below and one of our team memebers will reach out to discusss!</p>
+		<p class="gi-banner-desc">No matter who you are, Lazarus Rising has a place for you. Please fill out the form below and join our fight against homelessness!</p>
 	</div>
 </div>
 
@@ -10,22 +9,20 @@
 		<div class="gi-option">
 			<p class="option-num">1</p>
 			<p class="option-title">Volunteering</p>
-			<p class="option-desc">Either starting a region or joining a region (potential ideas are to show our existing regions?)</p>
+			<p class="option-desc">Join an existing region or start your own!</p>
 		</div>
 		<div class="gi-option">
 			<p class="option-num">2</p>
 			<p class="option-title">Partnering</p>
-			<p class="option-desc">Are you a homeless shelter? We can support your mission to help your participants get employed</p>
+			<p class="option-desc">We are always looking to form new relationships with corporations, universities, and homeless shelters. Let’s work together to make a difference.</p>
 		</div>
 		<div class="gi-option">
 			<p class="option-num">3</p>
 			<p class="option-title">Donating</p>
-			<p class="option-desc">2 ways: Click on the donate link or fill out the form for someone to reach out.</p>
+			<p class="option-desc">Every dollar makes a difference, and no amount is too small. 100% of all donations go directly to supporting our mission.</p>
 		</div>
 	</div>
 </div>
-
-
 
 
 <div class="gi-form">
@@ -51,20 +48,26 @@
 		<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="web-to-lead">
 		<input type=hidden name='captcha_settings' value='{"keyname":"LR_Key_Pair","fallback":"true","orgId":"00D1I000003GP3R","ts":""}'>
 		<input type=hidden name="oid" value="00D1I000003GP3R">
+		<input type=hidden name="retURL" value="<%= form_submitted_path %>">
 		<!--<input type="hidden" name="debug" value=1>-->
 		<!--<input type="hidden" name="debugEmail"-->
 		<!--value="william.cobb@lazarusrising.org">-->
 
 
+		
+
+
 			<div class="form-full">
-				<div class="form-half form-left">
-					<input id="first_name" placeholder="First Name" maxlength="40" name="first_name" size="20" type="text" required /><br>
-					<input id="email" placeholder="Email" maxlength="80" name="email" size="20" type="text" required /><br>
-					<input id="phone" placeholder="Phone" maxlength="40" name="phone" size="20" type="text" /><br>
+				<div class="form-row">
+					<input id="first_name" placeholder="First Name" maxlength="40" name="first_name" size="20" type="text" required />
+					<input id="last_name" placeholder="Last Name" maxlength="80" name="last_name" size="20" type="text" required />
 				</div>
-				<div class="form-half form-right">
-					<input id="last_name" placeholder="Last Name" maxlength="80" name="last_name" size="20" type="text" required /><br>
-					<input id="company" placeholder="Company/University" maxlength="40" name="company" size="20" type="text" /><br>
+				<div class="form-row">
+					<input id="email" placeholder="Email" maxlength="80" name="email" size="20" type="text" required />
+					<input id="company" placeholder="Company/University" maxlength="40" name="company" size="20" type="text" />
+				</div>
+				<div class="form-row">
+					<input id="phone" placeholder="Phone" maxlength="40" name="phone" size="20" type="text" />
 					<select id="00N1I00000N2mrf" name="00N1I00000N2mrf" title="Involvement Type" required>
 						<option value="">Involvement Type</option>
 						<option value="Volunteer - NYC">Volunteer - NYC</option>
@@ -82,8 +85,9 @@
 						<option value="Donate">Donate</option>
 						<option value="Media">Media</option>
 						<option value="Homeless">Homeless</option>
-					</select><br>
+					</select>
 				</div>
+				
 				<textarea id="00N1I00000N2nHT" placeholder="Comments" name="00N1I00000N2nHT" rows="3" type="text" wrap="soft"></textarea><br>
 				<div class="g-recaptcha" data-sitekey="6LeT1kwUAAAAANccNjNO8k4jt90BQF_8p0hjP10e"></div><br>
 				<input type="submit" name="submit">

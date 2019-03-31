@@ -29,48 +29,41 @@
 }
 
 .press-post-list {
-	width: 70%;
+	width: 100%;
 	margin: 50px auto;
 	.press-post {
-		margin: 20px auto;
+		margin: 20px 25%;
 		min-height: 120px;
 		display: block;
 		overflow: auto;
-		.post-image {
-			width: 120px;
-			min-height: 120px;
-			background: $placeholder-bg;
-			float: left;
-			margin-right: 10px;
-		}
 		.post-info {
 			.post-title {
 				font-family: 'Work Sans';
 				font-size: 16px;
 				letter-spacing: 0.5px;
 				color: $dark;
-				margin: 0 10px;
+				margin: 0;
 			}
 			.post-desc {
 				font-family: 'Crimson Text';
 				font-size: 15px;
 				letter-spacing: 1.1px;
 				color: $dark;
-				margin: 0 10px;
+				margin: 0;
 			}
 			.post-details {
 				font-family: 'Crimson Text';
 				font-size: 11px;
 				letter-spacing: 1.3px;
 				color: $dark;
-				margin: 0 10px;
+				margin: 0;
 			}
 			.post-link {
 				font-family: 'Work Sans';
 				font-size: 8px;
 				letter-spacing: 0.5px;
 				color: $brand-red;
-				margin: 0 10px;
+				margin: 0;
 			}
 		}
 	}

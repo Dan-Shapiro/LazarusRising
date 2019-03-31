@@ -1,0 +1,2 @@
+module FormSubmittedHelper
+end

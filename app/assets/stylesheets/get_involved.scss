@@ -91,21 +91,23 @@
 }
 
 .form-full {
-	width: 100%;
+	width: 80%;
 	display: inline-block;
-	.form-half {
-		width: 50%;
+	margin: 0 auto;
+	.form-row {
+		width: 100%;
 		display: inline-block;
-		float: left;
+		input[type="text"],
+		select {
+			width: 40%;
+			margin: 0 2.5%;
+			max-width: 325px;
+		}
+		select {
+			width: calc(40% + 20px);
+			max-width: 345px;
+		}
 	}
-}
-
-.form-left {
-	text-align: right;
-}
-
-.form-right {
-	text-align: left;
 }
 
 .gi-form {
@@ -145,24 +147,18 @@
 		textarea,
 		select
 		 {
-			width: 325px;
 			height: 35px;
 			background-color: $input-bg;
 			border: none;
-			margin: 15px;
 			color: $dark;
 			padding: 0 10px;
-		}
-
-		select {
-			width: 345px;
 		}
 
 		textarea {
 			height: 100px;
 			min-height: 100px;
 			max-height: 400px;
-			width: 325px;
+			max-width: 325px;
 			min-width: 325px;
 			max-width: 90%;
 			padding: 10px;

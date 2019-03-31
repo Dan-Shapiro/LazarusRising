@@ -1,103 +1,84 @@
 
 @import "variables";
 
-.video-main {
-	height: 466px;
+.banner {
 	width: 100%;
-  background-color: $placeholder-bg;
-  display: table; /* for placeholder */
-  text-align: center; /* for placeholder */
-  .placeholder {
-	  font-family: 'Work Sans';
-	  font-size: 24px;
-	  letter-spacing: 0.8px;
-	  color: $dark;
-	  display: table-cell;
-	  vertical-align: middle;
-  }
-}
-
-.slideshow-wrapper {
-	margin: 50px auto;
-	text-align: center;
-	.slideshow {
-		height: 350px;
-		background-color: $placeholder-bg;
-  	display: table; /* for placeholder */
-		width: 70%;
-		margin: 0 auto;
-		.placeholder {
-		  font-family: 'Work Sans';
-		  font-size: 24px;
-		  letter-spacing: 0.8px;
-		  color: $dark;
-		  display: table-cell;
-		  vertical-align: middle;
-	  }
-	}
-
-	.slideshow-caption {
-	  margin: 25px 30% 10px 30%;
-	  font-family: 'Crimson Text';
-	  font-size: 18px;
-	  letter-spacing: 1px;
-	  color: $dark;
-	}
-
-	.btn-read-more {
-		text-transform: uppercase;
-		font-family: 'Open Sans';
-		font-size: 11px;
-		font-weight: bold;
-		letter-spacing: 2.2px;
-		color: $brand-red;
-		padding-bottom: 5px;
-		&:hover {
-			border-bottom: 1px solid $brand-red;
-		}
+	max-height: 400px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		max-width: 100%;
 	}
 }
 
 .stats {
-	width: 60%;
-	height: 225px;
-	background-color: $brand-red;
-	display: inline-block;
-	padding: 0 20%;
-	.stat-item {
-		color: $light;
-		text-transform: uppercase;
+	margin: 50px auto;
+	width: 100%;
+	.stats-title {
 		text-align: center;
+		font-family: "Open Sans";
+		font-size: 20px;
 		font-weight: bold;
-		font-family: 'Open Sans';
-		float: left;
-		width: 33.33%;
-		h3 {
-			font-size: 20px;
-			letter-spacing: 4px;
-			margin: 125px 0 10px 0;
+		letter-spacing: 0.4px;
+		color: $dark;
+	}
+	.stats-row {
+		width: 70%;
+		margin: 10px auto;
+		display: flex;
+		justify-content: center;
+		.stats-col {
+			width: 33%;
+			margin: 0 auto;
+			display: inline-block;
+			vertical-align: top;
+			.stats-num {
+				font-family: "Open Sans";
+				font-size: 25px;
+				font-weight: bold;
+				letter-spacing: 2.6px;
+				text-align: center;
+				color: $brand-red;
+				margin: 0 auto;
+			}
+			.stats-desc {
+				font-family: "Open Sans";
+				font-size: 13px;
+				letter-spacing: 0.5px;
+				text-align: center;;
+				color: $dark;
+				margin: 0 auto;
+			}
 		}
-		h6 {
-			font-size: 11px;
-			letter-spacing: 2.2px;
-			margin: 0 0 50px 0 ;
-		}
+	}
+}
+
+.video-wrapper {
+	width: 70%;
+	margin: 0 auto;
+	video {
+		width: 100%;
+		margin: 0 auto;
 	}
 }
 
 .supporters-wrapper {
 	text-align: center;
+	background-color: $light;
+	border-top: 1px solid $dark;
 	h2 {
-		font-family: 'Work Sans';
+		font-family: 'Open Sans';
 		font-weight: normal;
 		font-size: 18px;
 		letter-spacing: 0.6px;
+		font-weight: bold;
 		color: $dark;
 		margin-top: 50px;
 	}
 	.supporters {
 		width: 70%;
-		background-color: $light;
 		display: inline-block;
 		padding: 0 15%;
 		.supporter-item {
