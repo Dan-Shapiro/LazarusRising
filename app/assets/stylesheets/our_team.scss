@@ -102,6 +102,17 @@
 						line-height: 19px;
 						text-align: center;
 					}
+					.p-links {
+						a {
+							font-family: 'Open Sans';
+							font-size: 15px;
+							letter-spacing: 0.55px;
+							color: $dark;
+							margin: 0 10px;
+							line-height: 15px;
+							text-align: center;
+						}
+					}
 				}
 			}
 		}
