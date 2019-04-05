@@ -1,12 +1,17 @@
 <div class="banner">
-	<%= image_tag "our-team-banner2.jpg" %>
+	<div class="banner-left">
+		<div class="banner-left-wrapper">
+			<h3 class="banner-left-title">Our Team</h3>
+			<p class="banner-left-text">We are a team of driven individuals coming together on a Pro Bono basis to better our communities. We are responsible for setting the strategy and ensuring the successful execution of Lazarus Rising’s services across the country. Together with our committed volunteers, donors, and corporate partners, we are empowering our participants to change their lives.</p>
+			<%= link_to 'Get Involved', get_involved_path, :class => 'banner-left-button' %>
+		</div>
+	</div>
+	<div class="banner-right">
+		<%= image_tag 'our-team-banner2.jpg', :class => 'banner-image' %>
+	</div>
 </div>
 
 <div class="our-team">
-	<div class="ot-header">
-		<h3>Our Team</h3>
-		<p>We are a team of driven individuals coming together on a Pro Bono basis to better our communities. We are responsible for setting the strategy and ensuring the successful execution of Lazarus Rising’s services across the country. Together with our committed volunteers, donors, and corporate partners, we are empowering our participants to change their lives.</p>
-	</div>
 	<div class="team-members">
 		<h3>Leadership Team</h3>
 		<hr>
@@ -107,10 +112,10 @@
 					<hr>
 					<p class="p-prof">PWC</p>
 					<div class="p-links">
-						<%= mail_to '#' do %>
+						<%= mail_to 'miranda.wasserman@lazarusrising.org' do %>
 							<%= fa_icon 'envelope-square' %>
 						<% end %>
-						<%= link_to '#', target: :_blank do %>
+						<%= link_to 'https://www.linkedin.com/in/miranda-wasserman-28885763', target: :_blank do %>
 							<%= fa_icon 'linkedin' %>
 						<% end %>
 					</div>
@@ -144,10 +149,10 @@
 					<hr>
 					<p class="p-prof">Veronica Beard</p>
 					<div class="p-links">
-						<%= mail_to '#' do %>
+						<%= mail_to 'taylormussenden@lazarusrising.org' do %>
 							<%= fa_icon 'envelope-square' %>
 						<% end %>
-						<%= link_to '#', target: :_blank do %>
+						<%= link_to 'https://www.linkedin.com/in/taylor-mussenden', target: :_blank do %>
 							<%= fa_icon 'linkedin' %>
 						<% end %>
 					</div>
