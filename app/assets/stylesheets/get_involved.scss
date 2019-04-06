@@ -14,29 +14,42 @@
 	opacity: 0;
 }
 
-.gi-banner {
+.gi-banner-wrapper {
 	width: 100%;
-	display: inline-block;
-	background-color: $placeholder-bg;
-	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #d8d8d8;
 	border-bottom: 1px solid $dark;
-	.gi-banner-text {
-		margin: 100px auto;
-		.gi-banner-title {
-			font-family: 'Work Sans';
-			font-size: 24px;
-			letter-spacing: 0.8px;
-			text-align: center;
-			color: $dark;
-		}
-		.gi-banner-desc {
+	.gi-banner {
+		height: 350px;
+		display: inline-flex;
+		align-items: flex-start;
+		justify-content: center;
+		margin: 0 auto;
+		background-image: url("gi_header.JPG");
+		background-size: cover;
+		.gi-banner-text {
 			width: 60%;
-			min-width: 550px;
 			margin: 0 auto;
-			font-family: 'Crimson Text';
-			letter-spacing: 1px;
-			text-align: center;
-			color: $dark;
+			border-radius: 5px;
+			background-color: rgba($light, .5);
+			.gi-banner-title {
+				font-family: 'Work Sans';
+				font-size: 24px;
+				letter-spacing: 0.8px;
+				text-align: center;
+				font-weight: bold;
+				color: $dark;
+			}
+			.gi-banner-desc {
+				min-width: 550px;
+				font-family: 'Crimson Text';
+				letter-spacing: 1px;
+				text-align: center;
+				font-size: 18px;
+				color: $dark;
+			}
 		}
 	}
 }

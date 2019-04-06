@@ -4,26 +4,39 @@
 
 @import "variables";
 
-.press-header {
+.press-header-wrapper {
 	width: 100%;
-	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #d8d8d8;
 	border-bottom: 1px solid $dark;
-	display: inline-block;
-	background-color: $placeholder-bg;
-	.press-header-info {
-		width: 60%;
-		margin: 50px auto;
-		h3 {
-			font-family: 'Work Sans';
-			font-size: 24px;
-			letter-spacing: 0.8px;
-			color: $dark;
-		}
-		p {
-			font-family: 'Crimson Text';
-			font-size: 16px;
-			letter-spacing: 1.1px;
-			color: $dark;
+	.press-header {
+		height: 350px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		background-image: url("pr_header.jpg");
+		background-size: cover;
+		.press-header-info {
+			width: 60%;
+			margin: 0 auto;
+			text-align: center;
+			border-radius: 5px;
+			background-color: rgba($light, .4);
+			h3 {
+				font-family: 'Work Sans';
+				font-size: 24px;
+				letter-spacing: 0.8px;
+				color: $dark;
+			}
+			p {
+				font-family: 'Crimson Text';
+				font-size: 18px;
+				letter-spacing: 1.1px;
+				color: $dark;
+			}
 		}
 	}
 }
