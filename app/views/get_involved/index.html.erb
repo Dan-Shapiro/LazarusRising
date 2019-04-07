@@ -106,5 +106,10 @@
 		if(recaptcha) {
 			recaptcha.setAttribute("required", "required");
 		}
+
+		if ("email" in localStorage) {
+			document.getElementById('email').value = localStorage["email"];
+			localStorage.removeItem("email");
+		}
 	};
 </script>

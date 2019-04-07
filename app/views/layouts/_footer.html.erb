@@ -52,10 +52,10 @@
 				<div class="mf-tr-email">
 					<p class="mf-e-text">Connect With Us</p>
 					<div class="mf-e-wrapper">
-						<input type="email" name="email" placeholder="Enter Email" class="mf-e">
+						<input id='email-collect' type="email" name="email" placeholder="Enter Email" class="mf-e">
 						<%= link_to '#', :class => 'mf-e-submit-link' do %>
-							<%= fa_icon 'caret-right', :class => 'mf-e-submit' %>
-							<% end %>
+							<%= fa_icon 'caret-right', :class => 'mf-e-submit', :onclick => 'collectForm();' %>
+						<% end %>
 					</div>
 				</div>
 				<div class="mf-tr-links">
@@ -77,3 +77,11 @@
 		<p class="mf-b-cr">Lazarus Rising is a 501(c)(3) tax-exempt, non-profit organization</p>
 	</div>
 </div>
+
+<script type="text/javascript">
+	function collectForm() {
+		localStorage["email"] = document.getElementById('email-collect').value;
+
+		document.location.href = "<%= get_involved_path %>";
+	}
+</script>
