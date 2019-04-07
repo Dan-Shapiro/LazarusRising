@@ -47,7 +47,6 @@ header {
 		margin: 12px 2.5%;
 		float: left;
 		width: 15%;
-		//min-width: 110px;
 		.lazarus-image {
 			width: 110px;
 			height: 50px;
@@ -62,7 +61,6 @@ header {
 			float: left;
 			margin-top: 40px;
 			width: 15%;
-			//min-width: 110px;
 			height: 20px;
 			line-height: 20px;
 			text-align: center;
@@ -110,7 +108,6 @@ header {
 			float: right;
 			margin-top: 40px;
 			width: 10%;
-			//min-width: 100px;
 			height: 20px;
 			line-height: 20px;
 			text-align: center;
@@ -151,7 +148,6 @@ header {
 
 	.nav-donate {
 		float: right;
-		//min-width: 56px;
 		height: 20px;
 		line-height: 20px;
 		margin: 35px 10px 0 10px;
@@ -168,7 +164,6 @@ header {
 
 	.nav-login {
 		float: right;
-		//min-width: 42px;
 		font-family: 'Open Sans';
 		font-size: 11px;
 		font-weight: bold;
@@ -180,84 +175,141 @@ header {
 	}
 }
 
-#main_footer {
-	border-top: 1px solid $dark;
-	padding: 0 4%;
+.main-footer {
+	width: 100%;
 	margin: 0 auto;
-	width: 92%;
-	text-align: left;
-	.footer-split {
-		margin-top: 40px;
-		.footer-left {
-			width: 66.66%;
-			float: left;
-			.footer-left-col {
-				width: 17%;
-				float: left;
-				padding: 0 4%;
-				a {
-					font-family: 'Open Sans';
-					font-size: 9px;
-					letter-spacing: 0.5px;
-					color: $dark;
-				}
-				.footer-col-header {
-					font-weight: bold;
-					font-size: 11px;
+	border-top: 1px solid $dark;
+	.mf-top {
+		display: inline-flex;
+		width: 100%;
+		margin: 0 auto;
+		.mf-top-left {
+			width: calc(2.0 * 100.0% / 3.0);
+			margin: 0 auto;
+			.mf-tl-wrapper {
+				width: 80%;
+				margin: 30px auto;
+				.mf-tl-row {
+					width: 100%;
+					display: inline-flex;
+					align-items: flex-start;
+					justify-content: left;
+					margin: 0 auto;
+					.mf-tl-col {
+						width: 25%;
+						.mf-tl-cell {
+							width: 80%;
+							margin: 10px auto;
+							.mf-text {
+								width: 100%;
+								margin: 5px auto;
+								text-align: left;
+								font-family: 'Open Sans';
+								font-size: 9px;
+								letter-spacing: 0.6px;
+								color: $dark;
+							}
+							.mf-text-b {
+								font-weight: bold;
+							}
+						}
+					}
 				}
 			}
 		}
-		.footer-right {
-			width: 27.33%;
-			float: right;
-			font-family: 'Open Sans';
-			color: $dark;
-			padding: 0 2% 0 4%;
+		.mf-top-right {
+			width: calc(100.0% / 3.0);
 			margin: 0 auto;
-			.footer-right-header {
-				font-size: 9px;
-				font-weight: bold;
-				letter-spacing: 0.5px;
-				font-size: 11px;
-			}
-			.footer-email {
-				position: relative;
+			.mf-tr-wrapper {
 				width: 100%;
-				border: 1px solid $dark;
-				.footer-email-input {
-					display: inline;
-					color: $input-placeholder;
-					letter-spacing: 0.4px;
-					font-size: 8px;
-					height: 22px;
-					display: inline;
-					padding-left: 5px;
-					border-color: transparent;
+				margin: 40px auto;
+				.mf-tr-email {
+					width: 80%;
+					margin: 0 auto;
+					.mf-e-text {
+						font-family: 'Open Sans';
+						font-weight: bold;
+						font-size: 9px;
+						letter-spacing: 0.6px;
+						color: $dark;
+					}
+					.mf-e-wrapper {
+						border-radius: 5px;
+						border: 1px solid $dark;
+						width: 100%;
+						display: inline-flex;
+						align-items: center;
+						justify-content: center;
+						.mf-e {
+							width: 90%;
+							margin: 0 auto;
+							border-radius: 5px;
+							border-color: transparent;
+							font-family: 'Open Sans';
+							font-size: 9px;
+							letter-spacing: 0.6px;
+							color: $dark;
+							height: 20px;
+							&:focus {
+								outline: none;
+							}
+						}
+
+						::placeholder {
+							color: #afafaf;
+							opacity: 1;
+						}
+
+						.mf-e-submit-link {
+							width: 10%;
+							.mf-e-submit {
+								color: $dark;
+							}
+						}
+					}
 				}
-				.footer-email-submit {
-					color: $dark;
-					display: inline;
-					padding: 6px;
-					float: right;
-				}
-			}
-			.footer-copyright {
-				font-size: 9px;
-				font-weight: 600;
-				letter-spacing: 0.5px;
-				text-align: center;
-				a {
-					color: $dark;
+				.mf-tr-links {
+					width: 100%;
+					margin: 0 auto;
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;
+					.mf-l-logo {
+						margin: 10px 5px;
+						.mf-l-logo-link {
+							width: 100%;
+							margin-top: 0 auto;
+							.mf-l-logo-img {
+								width: 35px;
+								height: 35px;
+							}
+						}
+					}
+					.mf-l-copy {
+						.mf-l-copy-text,
+						.mf-l-copy-text > a {
+							font-family: 'Open Sans';
+							font-size: 9px;
+							letter-spacing: 0.6px;
+							color: $dark;
+						}
+					}
 				}
 			}
 		}
 	}
-	.footer-bottom {
-		text-align: center;
-		font-family: 'Open Sans';
-		font-size: 9px;
-		letter-spacing: 0.5px;
-		color: $muted;
-		margin: 50px 0 40px 0;
+	.mf-bottom {
+		width: 100%;
+		margin: 0 auto;
+		.mf-b-cr {
+			color: #afafaf;
+			font-family: 'Open Sans';
+			font-size: 9px;
+			letter-spacing: 0.6px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			width: 100%;
+			text-align: center;
+		}
 	}
 }

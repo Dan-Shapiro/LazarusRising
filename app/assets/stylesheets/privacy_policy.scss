@@ -1,14 +1,24 @@
 
 @import "variables";
 
-.privacy-policy {
-	margin: 30px 15%;
-	font-family: 'Crimson Text';
-	h1 {
-		text-align: center;
-	}
-	h1,
-	h4 {
-		font-family: 'Open Sans';
-	}
+.pp-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	margin: 50px auto;
+	background-color: #d8d8d8;
+	border: 1px solid #979797;
+	.privacy-policy {
+		width: 75%;
+		margin: 30px auto;
+		font-family: 'Crimson Text';
+		h1 {
+			text-align: center;
+		}
+		h1,
+		h4 {
+			font-family: 'Open Sans';
+		}
+	}	
 }

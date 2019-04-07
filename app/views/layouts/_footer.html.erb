@@ -1,52 +1,79 @@
-<div id="main_footer">
-	<div class="footer-split clearfix">
-		<div class="footer-left">
-			<div class="footer-left-col">
-				<%= link_to 'Who We Are', '#', :class => 'footer-col-header' %><br>
-				<%= link_to 'Mission/History', '#' %><br>
-				<%= link_to 'Our Team', our_team_path %><br>
-				<br>
-				<%= link_to 'Get Involved', get_involved_path, :class => 'footer-col-header' %>
-			</div>
-			<div class="footer-left-col">
-				<%= link_to 'Ways We Help', '#', :class => 'footer-col-header' %><br>
-				<%= link_to 'Program Model', '#' %><br>
-				<%= link_to 'Financials', '#' %><br>
-				<br>
-				<%= link_to 'Press Room', press_room_path, :class => 'footer-col-header' %>
-			</div>
-			<div class="footer-left-col">
-				<%= link_to 'Communities', '#', :class => 'footer-col-header' %><br>
-				<%= link_to 'Volunteer Community', 'https://lazarusrising.force.com/s/' %><br>
-				<%= link_to 'Shelter Partner Community', 'https://lazarusrising.force.com/s/login/' %><br>
-				<br>
-				<%= link_to 'Donate', 'https://www.paypal.me/lazarusrising', :class => 'footer-col-header', target: :_blank %>
-			</div>
-			<div class="footer-left-col">
-				<%= link_to 'Follow', '#', :class => 'footer-col-header' %><br>
-				<%= link_to 'https://www.facebook.com/LazarusRisingNonprofit/', target: :_blank do %>
-					<%= fa_icon 'facebook-f' %> Facebook 
-				<% end %><br>
-				<%= link_to 'https://www.linkedin.com/company/lazarusrising', target: :_blank do %>
-					<%= fa_icon 'linkedin' %> LinkedIn 
-				<% end %>
+<div class="main-footer">
+	<div class="mf-top">
+		<div class="mf-top-left">
+			<div class="mf-tl-wrapper">
+				<div class="mf-tl-row">
+					<div class="mf-tl-col">
+						<div class="mf-tl-cell">
+							<%= link_to 'Our Team', our_team_path, :class => 'mf-text mf-text-b' %>
+						</div>
+					</div>
+					<div class="mf-tl-col">
+						<div class="mf-tl-cell">
+							<%= link_to 'Get Involved', get_involved_path, :class => 'mf-text mf-text-b' %>
+						</div>
+					</div>
+					<div class="mf-tl-col">
+						<div class="mf-tl-cell">
+							<p class="mf-text mf-text-b">Communities</p>
+							<%= link_to 'Volunteer Community', 'https://lazarusrising.force.com/s/', :class => 'mf-text' %>
+							<%= link_to 'Shelter Partner Community', 'https://lazarusrising.force.com/s/login/', :class => 'mf-text' %>
+						</div>
+					</div>
+					<div class="mf-tl-col">
+						<div class="mf-tl-cell">
+							<p class="mf-text mf-text-b">Follow</p>
+							<%= link_to 'https://www.facebook.com/LazarusRisingNonprofit/', target: :_blank, :class => 'mf-text' do %>
+								<%= fa_icon 'facebook-f' %> Facebook 
+							<% end %>
+							<br>
+							<%= link_to 'https://www.linkedin.com/company/lazarusrising', target: :_blank, :class => 'mf-text' do %>
+								<%= fa_icon 'linkedin' %> LinkedIn 
+							<% end %>
+						</div>
+					</div>
+				</div>
+				<div class="mf-tl-row">
+					<div class="mf-tl-col">
+						<div class="mf-tl-cell">
+							<%= link_to 'Press Room', press_room_path, :class => 'mf-text mf-text-b' %>
+						</div>
+					</div>
+					<div class="mf-tl-col">
+						<div class="mf-tl-cell">
+							<%= link_to 'Donate', 'https://www.paypal.me/lazarusrising', :class => 'mf-text mf-text-b', target: :_blank %>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="footer-right">
-			<p class="footer-right-header">Connect With Us</p>
-			<div class="footer-email">
-				<input type="email" name="email" placeholder="Enter Email" class="footer-email-input">
-				<%= link_to '#' do %>
-					<%= fa_icon 'caret-right', :class	=> 'footer-email-submit' %>
-				<% end %>
-			</div>
-			<br><br>
-			<div class="footer-copyright">
-				<%= fa_icon 'copyright' %> 2018 Lazarus Rising | <%= link_to 'Privacy Policy', privacy_policy_path %>
+		<div class="mf-top-right">
+			<div class="mf-tr-wrapper">
+				<div class="mf-tr-email">
+					<p class="mf-e-text">Connect With Us</p>
+					<div class="mf-e-wrapper">
+						<input type="email" name="email" placeholder="Enter Email" class="mf-e">
+						<%= link_to '#', :class => 'mf-e-submit-link' do %>
+							<%= fa_icon 'caret-right', :class => 'mf-e-submit' %>
+							<% end %>
+					</div>
+				</div>
+				<div class="mf-tr-links">
+					<div class="mf-l-logo">
+						<%= link_to 'https://www.guidestar.org/profile/47-3579270', target: :_blank, :class => 'mf-l-logo-link' do %>
+							<%= image_tag 'https://widgets.guidestar.org/gximage2?o=9441742&l=v4', :class => 'mf-l-logo-img' %>
+						<% end %>
+					</div>
+					<div class="mf-l-copy">
+						<p class="mf-l-copy-text">
+							<%= fa_icon 'copyright' %> 2018 Lazarus Rising | <%= link_to 'Privacy Policy', privacy_policy_path %>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="footer-bottom">
-		Lazarus Rising is a 501(c)(3) tax-exempt, non-profit organization
+	<div class="mf-bottom">
+		<p class="mf-b-cr">Lazarus Rising is a 501(c)(3) tax-exempt, non-profit organization</p>
 	</div>
 </div>
