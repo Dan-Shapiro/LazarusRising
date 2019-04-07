@@ -2,21 +2,48 @@
 
 @import "variables";
 
-.form-submitted {
-	margin: 30px 15%;
-	font-family: 'Crimson Text';
-	h1 {
-		text-align: center;
-	}
-	h1,
-	h4 {
-		font-family: 'Open Sans';
-	}
+.fs-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	height: 400px;
+	margin: 50px auto;
+	background-color: #d8d8d8;
+	border: 1px solid #979797;
+	.form-submitted {
+		width: 75%;
+		.fs-title,
+		.fs-text {
+			font-family: 'Open Sans';
+		}
 
-	a {
-		color: $dark;
-		font-size: 36px;
-		text-align: center;
-		letter-spacing: 30px;
+		.fs-title {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+
+		.fs-desc {
+			font-family: 'Crimson Text';
+			margin-bottom: 30px;
+		}
+
+		.fs-links {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			width: 100%;
+			margin: 0 auto;
+			.fs-link {
+				color: $dark;
+				font-size: 36px;
+				text-align: center;
+				letter-spacing: 30px;
+				&:hover {
+					color: $brand-red;
+				}
+			}
+		}
 	}
 }
