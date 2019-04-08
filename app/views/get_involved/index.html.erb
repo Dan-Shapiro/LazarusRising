@@ -101,8 +101,6 @@
 			recaptcha.setAttribute("required", "required");
 		}
 
-		setEnterListener();
-
 		if ("email" in localStorage) {
 			document.getElementById('email').value = localStorage["email"];
 			localStorage.removeItem("email");

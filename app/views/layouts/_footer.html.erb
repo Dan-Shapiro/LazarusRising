@@ -52,7 +52,7 @@
 				<div class="mf-tr-email">
 					<p class="mf-e-text">Connect With Us</p>
 					<div class="mf-e-wrapper">
-						<input id='email-collect' type="email" name="email" placeholder="Enter Email" class="mf-e">
+						<input id='email-collect' type="email" name="email" placeholder="Enter Email" class="mf-e" onkeydown='collectForm();'>
 						<%= link_to '#', :class => 'mf-e-submit-link' do %>
 							<%= fa_icon 'caret-right', :class => 'mf-e-submit', :onclick => 'collectForm();' %>
 						<% end %>
@@ -79,15 +79,6 @@
 </div>
 
 <script type="text/javascript">
-	function setEnterListener() {
-		var emailField = document.getElementById("email-collect");
-		emailField.addEventListener("keydown", function(e) {
-			if(e.keyCode === 13) {
-				collectForm();
-			}
-		});
-	}
-
 	function collectForm() {
 		localStorage["email"] = document.getElementById('email-collect').value;
 
