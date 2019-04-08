@@ -224,7 +224,7 @@ header {
 				width: 100%;
 				margin: 40px auto;
 				.mf-tr-email {
-					width: 80%;
+					width: 100%;
 					margin: 0 auto;
 					.mf-e-text {
 						font-family: 'Open Sans';
@@ -237,12 +237,14 @@ header {
 						border-radius: 5px;
 						border: 1px solid $dark;
 						width: 100%;
+						max-width: 250px;
 						display: inline-flex;
 						align-items: center;
 						justify-content: center;
 						.mf-e {
 							width: 90%;
-							margin: 0 auto;
+							margin: 2px auto;
+							padding-left: 10px;
 							border-radius: 5px;
 							border-color: transparent;
 							font-family: 'Open Sans';
@@ -262,8 +264,11 @@ header {
 
 						.mf-e-submit-link {
 							width: 10%;
+							margin: 0 auto;
+							text-align: center;
 							.mf-e-submit {
 								color: $dark;
+								margin: 0 auto;
 							}
 						}
 					}
@@ -272,7 +277,6 @@ header {
 					width: 100%;
 					margin: 0 auto;
 					display: inline-flex;
-					justify-content: center;
 					align-items: center;
 					.mf-l-logo {
 						margin: 10px 5px;

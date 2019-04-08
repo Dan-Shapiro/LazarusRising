@@ -66,7 +66,7 @@
 					</div>
 					<div class="mf-l-copy">
 						<p class="mf-l-copy-text">
-							<%= fa_icon 'copyright' %> 2018 Lazarus Rising | <%= link_to 'Privacy Policy', privacy_policy_path %>
+							<%= fa_icon 'copyright' %> 2019 Lazarus Rising | <%= link_to 'Privacy Policy', privacy_policy_path %>
 						</p>
 					</div>
 				</div>
@@ -79,6 +79,15 @@
 </div>
 
 <script type="text/javascript">
+	window.onload = function() {
+		var emailField = document.getElementById("email-collect");
+		emailField.addEventListener("keydown", function(e) {
+			if(e.keyCode === 13) {
+				collectForm();
+			}
+		});
+	}
+
 	function collectForm() {
 		localStorage["email"] = document.getElementById('email-collect').value;
 

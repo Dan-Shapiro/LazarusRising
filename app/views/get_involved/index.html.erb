@@ -51,16 +51,9 @@
 		<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" id="web-to-lead">
 		<input type=hidden name='captcha_settings' value='{"keyname":"LR_Key_Pair","fallback":"true","orgId":"00D1I000003GP3R","ts":""}'>
 		<input type=hidden name="oid" value="00D1I000003GP3R">
-		<input type=hidden name="retURL" value="<%= form_submitted_path %>">
-		<input type=hidden name="saveURL" value="<%= form_submitted_path %>">
-		<!--<input type="hidden" name="debug" value=1>-->
-		<!--<input type="hidden" name="debugEmail"-->
-		<!--value="william.cobb@lazarusrising.org">-->
-
-
+		<input type=hidden name="retURL" value="https://lazarus-rising.herokuapp.com<%= form_submitted_path %>">
+		<input type=hidden name="saveURL" value="https://lazarus-rising.herokuapp.com<%= form_submitted_path %>">
 		
-
-
 			<div class="form-full">
 				<div class="form-row">
 					<input id="first_name" placeholder="First Name" maxlength="40" name="first_name" size="20" type="text" required />
