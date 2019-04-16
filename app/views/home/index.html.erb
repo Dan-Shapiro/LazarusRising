@@ -1,7 +1,47 @@
 <div class="home-banner">
 	<%= image_tag "lr-home-banner.jpg", :class => 'banner-img' %>
-	<div class="home-form">
-		<!-- Our vision is to combat homelessness by empowering people with the skills they need to secure meaningful employment. -->
+	<div class="home-form-wrapper">
+		<div class="hf-wrapper">
+			<div class="hf-section">
+				<p class="hf-title">Join The Cause!</p>
+				<p class="hf-text">Our vision is to combat homelessness by empowering people with the skills they need to secure meaningful employment.</p>
+				<p class="hf-name">Name</p>
+				<div class="hf-row">
+					<div class="hfr-item-wrapper">
+						<input type="text" name="first-name" id="first-name" placeholder="First" class="hfr-first hfr-item">
+					</div>
+					<div class="hfr-item-wrapper">
+						<input type="text" name="last-name" id="last-name" placeholder="Last" class="hfr-last hfr-item">
+					</div>
+				</div>
+				<p class="hf-name">Interest</p>
+					<div class="hf-row">
+						<div class="hfr-item-wrapper">
+						<select id="interest" name="interest" title="Interest" class="hfr-interest hfr-item">
+							<option value="">Select</option>
+							<option value="Volunteer - NYC">Volunteer - NYC</option>
+							<option value="Volunteer - DC">Volunteer - DC</option>
+							<option value="Volunteer - Delaware">Volunteer - Delaware</option>
+							<option value="Volunteer - Philadelphia / Camden">Volunteer - Philadelphia / Camden</option>
+							<option value="Volunteer - Binghamton">Volunteer - Binghamton</option>
+							<option value="Volunteer - Pittsburgh">Volunteer - Pittsburgh</option>
+							<option value="Volunteer - Los Angeles">Volunteer - Los Angeles</option>
+							<option value="Volunteer - Williamsburg">Volunteer - Williamsburg</option>
+							<option value="Volunteer - Other">Volunteer - Other</option>
+							<option value="Partner - Shelter">Partner - Shelter</option>
+							<option value="Partner - Corporation / University">Partner - Corporation / University</option>
+							<option value="Partner - Other">Partner - Other</option>
+							<option value="Donate">Donate</option>
+							<option value="Media">Media</option>
+							<option value="Homeless">Homeless</option>
+						</select>
+					</div>
+					<%= link_to '#', :class => 'hfr-submit-wrapper', :onclick => 'collectHeaderForm();' do %>
+						<p class="hfr-submit">Get Started</p>
+					<% end %>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -90,3 +130,14 @@
 		</div>
 	</div>
 </div>
+
+
+<script type="text/javascript">
+	function collectHeaderForm() {
+		localStorage["firstname"] = document.getElementById('first-name').value;
+		localStorage["lastname"] = document.getElementById('last-name').value;
+		localStorage["interest"] = document.getElementById('interest').value;
+
+		document.location.href = "<%= get_involved_path %>";
+	}
+</script>

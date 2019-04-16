@@ -108,5 +108,20 @@
 			document.getElementById('email').value = localStorage["email"];
 			localStorage.removeItem("email");
 		}
+
+		if ("firstname" in localStorage) {
+			document.getElementById('first_name').value = localStorage["firstname"];
+			localStorage.removeItem("firstname");
+		}
+
+		if ("lastname" in localStorage) {
+			document.getElementById('last_name').value = localStorage["lastname"];
+			localStorage.removeItem("lastname");
+		}
+
+		if ("interest" in localStorage) {
+			document.getElementById('00N1I00000N2mrf').value = localStorage["interest"];
+			localStorage.removeItem("interest");
+		}
 	};
 </script>
