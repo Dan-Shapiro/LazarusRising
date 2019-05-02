@@ -88,6 +88,6 @@
 	function collectForm() {
 		localStorage["email"] = document.getElementById('email-collect').value;
 
-		document.location.href = "<%= get_involved_path %>";
+		document.location.href = "<%= get_involved_path(anchor: 'get_involved_form') %>";
 	}
 </script>

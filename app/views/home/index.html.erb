@@ -138,6 +138,6 @@
 		localStorage["lastname"] = document.getElementById('last-name').value;
 		localStorage["interest"] = document.getElementById('interest').value;
 
-		document.location.href = "<%= get_involved_path %>";
+		document.location.href = "<%= get_involved_path(anchor: 'get_involved_form') %>";
 	}
 </script>

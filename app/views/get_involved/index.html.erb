@@ -30,8 +30,7 @@
 	</div>
 </div>
 
-
-<div class="gi-form">
+<div class="gi-form" id="get_involved_form">
 	<p class="form-title">Ready to get involved?</p>
 	<p class="form-desc">Fill out the below to get started.</p>
 	<div class="web-to-lead">
@@ -43,7 +42,7 @@
 		 function timestamp() { 
 		 	var response = document.getElementById("g-recaptcha-response");
 		 	if (response == null || response.value.trim() == "") {
-		 		var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+		 		var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value) || null;
 		 		elems["ts"] = JSON.stringify(new Date().getTime());
 		 		document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
 		 	}

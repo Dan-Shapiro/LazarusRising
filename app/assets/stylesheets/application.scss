@@ -24,6 +24,8 @@
 
 body {
 	position: relative;
+	max-width: 1500px;
+	margin: 0 auto;
 }
 
 a {
@@ -61,6 +63,7 @@ header {
 			float: left;
 			margin-top: 40px;
 			width: 10%;
+			min-width: 100px;
 			height: 20px;
 			line-height: 20px;
 			text-align: center;
