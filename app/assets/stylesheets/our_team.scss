@@ -48,7 +48,7 @@
 		height: 100%;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: flex-end;
 		overflow: hidden;
 		.banner-image {
 			height: 100%;
@@ -141,6 +141,10 @@
 						}
 					}
 				}
+			}
+
+			.pod-close {
+				width: 20%;
 			}
 		}
 	}

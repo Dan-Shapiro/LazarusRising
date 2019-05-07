@@ -69,7 +69,7 @@
 		</div>
 
 		<div class="row">
-			<div class="pod">
+			<div class="pod pod-close">
 				<%= image_tag 'Headshots/ArielKheadshot.png', :class => 'headshot' %>
 				<div class="info">
 					<h6 class="p-name">Ariel Kutcher</h6>
@@ -86,7 +86,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="pod">
+			<div class="pod pod-close">
 				<%= image_tag 'Headshots/LizGheadshot.png', :class => 'headshot' %>
 				<div class="info">
 					<h6 class="p-name">Liz Gerner</h6>
@@ -103,7 +103,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="pod">
+			<div class="pod pod-close">
 				<%= image_tag 'Headshots/MirandaWheadshot.png', :class => 'headshot' %>
 				<div class="info">
 					<h6 class="p-name">Miranda Wasserman</h6>
@@ -115,6 +115,23 @@
 							<%= fa_icon 'envelope-square' %>
 						<% end %>
 						<%= link_to 'https://www.linkedin.com/in/miranda-wasserman-28885763', target: :_blank do %>
+							<%= fa_icon 'linkedin' %>
+						<% end %>
+					</div>
+				</div>
+			</div>
+			<div class="pod pod-close">
+				<%= image_tag 'Headshots/SaraYheadshot.jpg', :class => 'headshot' %>
+				<div class="info">
+					<h6 class="p-name">Sara Young</h6>
+					<p class="p-title">Content Manager</p>
+					<hr>
+					<p class="p-prof">University of Pennsylvania</p>
+					<div class="p-links">
+						<%= mail_to 'sara.young@lazarusrising.org' do %>
+							<%= fa_icon 'envelope-square' %>
+						<% end %>
+						<%= link_to 'https://www.linkedin.com/in/sara-young17', target: :_blank do %>
 							<%= fa_icon 'linkedin' %>
 						<% end %>
 					</div>
