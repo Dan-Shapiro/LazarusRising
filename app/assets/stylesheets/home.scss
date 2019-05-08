@@ -61,7 +61,7 @@
 					justify-content: center;
 					.hfr-item-wrapper {
 						border: 1px solid $dark;
-						margin: 0;
+						margin: 0 5px 0 0;
 						.hfr-item {
 							font-family: 'Open Sans';
 							font-size: 10px;
@@ -101,7 +101,7 @@
 						color: $light;
 						font-weight: bold;
 						margin: 0 auto;
-						width: 80px;
+						width: 77px;
 					}
 				}
 			}
