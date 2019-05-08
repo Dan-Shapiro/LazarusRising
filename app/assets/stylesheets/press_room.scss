@@ -69,8 +69,9 @@
 		overflow: auto;
 		.post-info {
 			.post-title {
-				font-family: 'Work Sans';
-				font-size: 16px;
+				font-family: 'Open Sans';
+				font-weight: normal;
+				font-size: 17px;
 				letter-spacing: 0.5px;
 				color: $dark;
 				margin: 0;
@@ -84,17 +85,21 @@
 			}
 			.post-details {
 				font-family: 'Crimson Text';
-				font-size: 11px;
+				font-size: 13px;
 				letter-spacing: 1.3px;
 				color: $dark;
 				margin: 0;
 			}
 			.post-link {
-				font-family: 'Work Sans';
-				font-size: 8px;
+				font-family: 'Open Sans';
+				font-size: 12px;
 				letter-spacing: 0.5px;
-				color: $brand-red;
+				color: $dark;
 				margin: 0;
+				text-decoration: underline;
+				&:hover {
+					color: $brand-red;
+				}
 			}
 		}
 	}
