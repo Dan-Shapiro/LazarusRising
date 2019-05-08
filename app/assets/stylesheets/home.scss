@@ -34,10 +34,11 @@
 				padding: 30px;
 				.hf-title {
 					font-family: 'Open Sans';
-					font-size: 25px;
-					font-weight: bold;
+					font-size: 27px;
 					letter-spacing: 0.5px;
 					color: $dark;
+					font-weight: normal;
+					margin: 0;
 				}
 				.hf-text {
 					font-family: 'Open Sans';
@@ -59,7 +60,6 @@
 					align-items: center;
 					justify-content: center;
 					.hfr-item-wrapper {
-						border-radius: 5px;
 						border: 1px solid $dark;
 						margin: 0 5px;
 						.hfr-item {
