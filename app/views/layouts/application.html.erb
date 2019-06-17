@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Lazarusrising</title>
+    <title><%= yield(:title) %></title>
+    <meta name="description" content="<%= yield(:meta_desc) %>" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
