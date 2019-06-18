@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
 	get '/volunteercommunity' => redirect("https://lazarusrising.force.com/s/"),:as => :volunteer_community
 	get '/partnercommunity' => redirect("https://lazarusrising.force.com/s/login/"), :as => :partner_community
+	get '/resumeupload' => redirect("https://forms.gle/YWXsdfweUFW2Rtu66"), :as => :resume_upload
 
 	get '*path' => redirect('/')
 end
