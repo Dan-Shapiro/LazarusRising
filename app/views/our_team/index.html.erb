@@ -69,6 +69,23 @@
 					</div>
 				</div>
 			</div>
+			<div class="pod">
+				<%= image_tag 'Headshots/PatVheadshot.png', :class => 'headshot' %>
+				<div class="info">
+					<h6 class="p-name">Pat Vroman</h6>
+					<p class="p-title">Chief Operating Officer</p>
+					<hr>
+					<p class="p-prof">Citi</p>
+					<div class="p-links">
+						<%= mail_to 'pat.vroman@lazarusrising.org' do %>
+							<%= fa_icon 'envelope-square' %>
+						<% end %>
+						<%= link_to 'https://www.linkedin.com/in/patrickvroman/', target: :_blank do %>
+							<%= fa_icon 'linkedin' %>
+						<% end %>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="row">
