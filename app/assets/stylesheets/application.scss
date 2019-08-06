@@ -175,6 +175,7 @@ header {
 		padding: 5px 7px;
 		background-color: $brand-red;
 		width: 77px;
+		cursor: pointer;
 	}
 
 	.nav-login {
@@ -187,6 +188,14 @@ header {
 		height: 20px;
 		line-height: 20px;
 		margin: 40px 20px 0 10px;
+	}
+
+	.donorbox-box {
+		position: absolute;
+		top: 105px;
+		right: 25px;
+		z-index: 10;
+		display: none;
 	}
 }
 
