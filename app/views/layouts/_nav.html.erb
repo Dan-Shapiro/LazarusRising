@@ -1,3 +1,23 @@
+
+
+<!-- MOBILE -->
+
+<span class="show-mobile">
+<header>
+	<%= fa_icon 'bars' %>
+	<%= link_to root_path, :class => 'lazarus-logo' do %>
+		<%#= image_tag 'lazarusrising.PNG', :class => 'lazarus-image' %>
+		<%= image_tag 'lazarusrising-logo.png', :class => 'lazarus-image' %>
+		<p class="lazarus-text">LAZARUS RISING</p>
+	<% end %>
+</header>
+</span>
+
+
+
+<!-- DESKTOP  -->
+
+<span class="hide-mobile">
 <header>
 	<%= link_to root_path, :class => 'lazarus-logo' do %>
 		<%#= image_tag 'lazarusrising.PNG', :class => 'lazarus-image' %>
@@ -46,3 +66,4 @@
 		<li><%= link_to 'Donate', 'https://www.paypal.me/lazarusrising', :class => 'nav-donate', target: :_blank %></li>
 	</ul>
 </header>
+</span>
