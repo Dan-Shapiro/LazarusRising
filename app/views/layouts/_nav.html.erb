@@ -3,8 +3,24 @@
 <!-- MOBILE -->
 
 <span class="show-mobile">
+
+<div id="nav-popup" class="nav-overlay">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><%= fa_icon 'times' %></a>
+
+	<div class="nav-overlay-content">
+		<%= link_to 'LAZARUS RISING', root_path, :class => 'nav-overlay-title' %>
+
+		<div class="nav-overlay-links">
+			<%= link_to 'Our Team', our_team_path %>
+			<%= link_to 'Get Involved', get_involved_path %>
+			<%= link_to 'Press Toom', press_room_path %>
+			<%= link_to 'Our Team', our_team_path %>
+		</div>
+	</div>
+</div>
+
 <header>
-	<%= fa_icon 'bars' %>
+	<span onclick="openNav()"><%= fa_icon 'bars' %></span>
 	<%= link_to root_path, :class => 'lazarus-logo' do %>
 		<%#= image_tag 'lazarusrising.PNG', :class => 'lazarus-image' %>
 		<%= image_tag 'lazarusrising-logo.png', :class => 'lazarus-image' %>
@@ -12,6 +28,16 @@
 	<% end %>
 </header>
 </span>
+
+<script type="text/javascript">
+	function openNav() {
+		document.getElementById("nav-popup").style.width = "100%";
+	}
+
+	function closeNav() {
+		document.getElementById("nav-popup").style.width = "0%";
+	}
+</script>
 
 
 

@@ -29,6 +29,67 @@
     display: none;
   }
 
+  .nav-overlay {
+  	height: 100%;
+  	width: 0;
+  	position: fixed;
+  	z-index: 1;
+  	left: 0;
+  	top: 0;
+  	background-color: $brand-red;
+  	overflow-x: hidden;
+  	transition: 0.5s;
+
+  	a {
+  		padding: 8px;
+  		text-decoration: none;
+  		font-size: 36px;
+  		color: $light;
+  		display: block;
+  		transition: 0.3s;
+  	}
+
+  	.closebtn {
+  		position: absolute;
+  		top: 20px;
+  		left: 35px;
+  		font-size: 30px;
+  	}
+  }
+
+  .nav-overlay-content {
+  	position: relative;
+  	width: 100%;
+  	text-align: center;
+  	margin-top: 35px;
+
+  	.nav-overlay-title {
+  		font-family: 'Open Sans';
+  		font-size: 30px;
+  		font-weight: bold;
+  		line-height: 21px;
+  		letter-spacing: 4.5px;
+  		text-align: center;
+  		color: $light;
+  	}
+
+  	.nav-overlay-links {
+  		margin-top: 80px;
+  		font-size: 25px;
+  		font-weight: normal;
+  		line-height: 17px;
+  		letter-spacing: 0.5px;
+  		text-align: center;
+  		color: $light;
+
+  		a {
+  			margin-bottom: 40px;
+  		}
+  	}
+
+  	
+  }
+
   body {
   	width: 100%;
   	margin: 0 auto;
