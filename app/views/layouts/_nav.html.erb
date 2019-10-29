@@ -43,6 +43,33 @@
 				<!--<li class="nav-dropdown-link"><%#= link_to 'Admin', '#' %></li>-->
 			</ul>
 		</li>
-		<li><%= link_to 'Donate', 'https://www.paypal.me/lazarusrising', :class => 'nav-donate', target: :_blank %></li>
+		
+		<li><p class="nav-donate" id="nav-donate-button">Donate</p></li>
 	</ul>
+
+	<div class="donorbox-box" id="donorbox-item">
+		<script src="https://donorbox.org/widget.js" paypalExpress="false"></script><iframe src="https://donorbox.org/embed/lazarus-rising-giving" height="685px" width="100%" style="max-width:500px; min-width:310px; max-height:none!important" seamless="seamless" name="donorbox" frameborder="0" scrolling="no" allowpaymentrequest></iframe>
+	</div>
+
+	<script type="text/javascript">
+		document.getElementById("nav-donate-button").addEventListener ("click", showDonorbox, false);
+
+		function showDonorbox() {
+			var donorbox = document.getElementById('donorbox-item');
+			var donorButton = document.getElementById('nav-donate-button');
+
+			if(donorbox.style.display == 'block') {
+				donorbox.style.display = 'none';
+				donorButton.innerHTML = 'Donate';
+
+			}
+			else {
+				donorbox.style.display = 'block';
+				donorButton.innerHTML = 'Close';
+			}
+			
+		}
+	</script>
 </header>
+
+
