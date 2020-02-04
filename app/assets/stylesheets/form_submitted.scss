@@ -16,6 +16,13 @@
 		.fs-title,
 		.fs-text {
 			font-family: 'Open Sans';
+			a {
+				color: $brand-red;
+				&:hover {
+					text-decoration: underline;
+				}
+				
+			}
 		}
 
 		.fs-title {
@@ -26,6 +33,7 @@
 		.fs-desc {
 			font-family: 'Crimson Text';
 			margin-bottom: 30px;
+			text-align: center;
 		}
 
 		.fs-links {
